@@ -5,9 +5,12 @@
     <title>Home page</title>
 </head>
 <body>
-<h1>Welome to home page</h1>
-
-{{ 'this' }}
+<h1>Word Count</h1>
+    <form action="{% url 'count' %}">
+        <textarea cols="50" rows="10" name="fulltext"></textarea>
+        <br />
+        <input type="submit", value="Count!"/>
+    </form>
 
 </body>
 </html>
