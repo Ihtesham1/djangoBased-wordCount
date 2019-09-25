@@ -5,7 +5,16 @@
     <title>Count page</title>
 </head>
 <body>
-<h1>Counting will be shown here</h1>
+<h1>You have entered {{ wordcount }} words</h1>
+<h2>Your text is</h2>
+{{ fulltext }}
+<h3>Word  count is:</h3>
+{% for word, count in SortedDict %}
+
+{{word}} - {{count}}
+<br />
+
+{% endfor %}
 
 </body>
 </html>
